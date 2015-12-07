@@ -6,7 +6,7 @@ Learnt jQuery and its libraries by building few pages like
 
 * google map page using google map api
  
-* restaurant page using jQuery effects
+* restaurant page using jQuery effects and animation effects
 
 * templating page using jQuery trim() and each() functions
 
