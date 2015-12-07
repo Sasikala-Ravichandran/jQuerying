@@ -1,0 +1,44 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  line-height: 40px;
+}
+#container{
+	width: 850px;
+	margin: auto;
+	text-align: center;
+}
+h1{
+	padding: 10px;
+}
+#map{
+  border: 1px solid black;
+  width: 800px;
+  height: 400px;
+  margin: 0;
+}
+ 
+input[type="number"]:focus,
+input[type="text"]:focus{
+   background-color: #f0ffff;
+}
+
+input[type="number"] {
+  width: 100px;
+}
+input[type="text"] {
+  width: 280px;
+}
+input {
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+}
+
+
+button{
+   cursor: pointer;
+}
+button:hover {
+  opacity: 0.8;
+}
