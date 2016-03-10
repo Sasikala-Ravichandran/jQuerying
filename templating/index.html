@@ -1,55 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8">
     <title> jQuery templating</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <style type="text/css">
-      body{
-      	background-color: #000000;
-      	color: white;
+      body {
+        background-color: #000000;
+        color: white;
       }
-    
     </style>
-</head>
-
-<body>
-
-  <script type="template" id="idtemplating">
-    <h2> {{title}} </h2>
-    <p> {{description}} </p>
-  </script>
-   
-   <script>
-     (function(){
+  </head>
+  <body>
+    <script type="template" id="idtemplating">
+      <h2> {{title}} </h2>
+      <p> {{description}} </p>
+    </script>
+    <script>
+      (function(){
         var $content = [
           {
-             title: "Daffodils 1",
-             Description: "Narcissus /nɑrˈsɪsəs/ is a genus of predominantly spring perennial plants in the Amaryllidaceae family. Various common names including daffodil, daffadowndilly, narcissus, and jonquil are used to describe all or some members of the genus."
+            title: "Daffodils 1",
+            Description: "Narcissus /nɑrˈsɪsəs/ is a genus of predominantly spring perennial plants in the Amaryllidaceae family. Various common names including daffodil, daffadowndilly, narcissus, and jonquil are used to describe all or some members of the genus."
           },
-           {
-             title: "Daffodils 2",
-             Description: "Narcissus /nɑrˈsɪsəs/ is a genus of predominantly spring perennial plants in the Amaryllidaceae family. Various common names including daffodil, daffadowndilly, narcissus, and jonquil are used to describe all or some members of the genus."
+          {
+            title: "Daffodils 2",
+            Description: "Narcissus /nɑrˈsɪsəs/ is a genus of predominantly spring perennial plants in the Amaryllidaceae family. Various common names including daffodil, daffadowndilly, narcissus, and jonquil are used to describe all or some members of the genus."
           },
-           {
-             title: "Daffodils 3",
-             Description: "Narcissus /nɑrˈsɪsəs/ is a genus of predominantly spring perennial plants in the Amaryllidaceae family. Various common names including daffodil, daffadowndilly, narcissus, and jonquil are used to describe all or some members of the genus."
+          {
+            title: "Daffodils 3",
+            Description: "Narcissus /nɑrˈsɪsəs/ is a genus of predominantly spring perennial plants in the Amaryllidaceae family. Various common names including daffodil, daffadowndilly, narcissus, and jonquil are used to describe all or some members of the genus."
           }
-     ]
-  
-      template = $.trim($('#idtemplating').html());
-      var temp="";
-
-       $.each($content, function(index, obj){
-         temp += template.replace( /{{title}}/ig , obj.title).replace( /{{description}}/ig, obj.Description);
-         
-       });      
-          $(document.body).append(temp);
-   
-     })();
-     
-
-
-   </script>
-</body>
+          ]
+        template = $.trim($('#idtemplating').html());
+        var temp="";
+        $.each($content, function(index, obj){
+          temp += template.replace( /{{title}}/ig , obj.title).replace( /{{description}}/ig, obj.Description);
+        });
+        $(document.body).append(temp);
+      })();
+    </script>
+  </body>
 </html>

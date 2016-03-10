@@ -1,78 +1,61 @@
  <!DOCTYPE html>
 <html lang="en">
-	<head>
-	    <meta charset="utf-8">
-	    <title>Image Slider</title>
-		<link rel="stylesheet" href= "assets/main.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-		<script type="text/javascript" src="assets/jquery.cycle2.min.js"></script>
-	    <script type="text/javascript" src="assets/script.js"></script>
-	</head>
-	 
-	<body>
-
-	<div id="hero">
-       <h2> Cycle2 Image Slider </h2>
-       <div id="pager"></div>
-       <div id="pause">&asymp;</div>
-       <div id="play">&Delta;</div>
-       <div id="next">&rang;</div>
-       <div id="prev">&lang;</div>
-
-    	<div id="slider" class="cycle-slideshow" data-cycle-slides=">div"
-		   	 data-cycle-fx="fade"
-		   	 data-cycle-speed="900"
-		   	 data-cycle-timout="3000"
-		   	 data-cycle-pager="#pager"
-		   	 data-cycle-pager-template="<a href=#><img src='{{children.0.src}}' height=120 width=100 /></a>"
-		   	 data-cycle-next="#next"
-		   	 data-cycle-prev="#prev"
-		   	 data-cycle-manual-fx="scrollHorz"
-		   	 data-cycle-pager-fx="fade">
-
-		   	    <div class="items">
-		   		    <img src="assets/images/sunshine.jpg">
-		   			<section class="info">
-		   				 <h2>SunShine</h2>
-		   				 <p>This picture is a reflection of God's beauty... </p>
-		   			</section><!--End of info -->
-		   	   	</div><!--End of items -->
-
-
-		   	    <div class="items">
-		   		    <img src="assets/images/lake.jpg">
-		   			<section class="info">
-		   				 <h2>Lake</h2>
-		   				 <p>This picture is a reflection of God's beauty...</p>
-		   			</section><!--End of info -->
-		   	   	</div><!--End of items -->
-
-		   		<div class="items">
-		   		    <img src="assets/images/grass.jpg">
-		   			<section class="info">
-		   				 <h2>Grass</h2>
-		   				 <p>This picture is a reflection of God's beauty... </p>
-		   			</section><!--End of info -->
-		   	   	</div><!--End of items -->
-
-		   	   	<div class="items">
-		   		    <img src="assets/images/mountain.jpg">
-		   			<section class="info">
-		   				 <h2>Mountain</h2>
-		   				 <p>This picture is a reflection of God's beauty... </p>
-		   			</section><!--End of info -->
-		   	   	</div><!--End of items -->
-
-		   	   	<div class="items">
-		   		    <img src="assets/images/nature_path.jpg">
-		   			<section class="info">
-		   				 <h2>Nature Path</h2>
-		   				 <p>This picture is a reflection of God's beauty.... </p>
-		   			</section><!--End of info -->
-		   	   	</div><!--End of items -->
-
-		   	   	</div><!--End of slider -->
-		   	   	
-	   </div><!--End of Hero -->
-	</body>
+  <head>
+    <meta charset="utf-8">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href= "assets/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/jquery.cycle2.min.js"></script>
+    <script type="text/javascript" src="assets/script.js"></script>
+  </head>
+  <body>
+    <div id="hero">
+      <h2> Cycle2 Image Slider </h2>
+      <div id="pager"></div>
+      <div id="pause">&asymp;</div>
+      <div id="play">&Delta;</div>
+      <div id="next">&rang;</div>
+      <div id="prev">&lang;</div>
+      <div id="slider" class="cycle-slideshow" data-cycle-slides=">div"
+                        data-cycle-fx="fade"  data-cycle-speed="900" 
+                        data-cycle-timout="3000"  data-cycle-pager="#pager" 
+                        data-cycle-pager-template="<a href=#><img src='{{children.0.src}}' height=120 width=100 /></a>" data-cycle-next="#next" data-cycle-prev="#prev" data-cycle-manual-fx="scrollHorz"  	 data-cycle-pager-fx="fade">
+        <div class="items">
+          <img src="assets/images/sunshine.jpg">
+          <section class="info">
+            <h2>SunShine</h2>
+            <p>This picture is a reflection of God's beauty... </p>
+          </section><!--End of info -->
+        </div><!--End of items -->
+        <div class="items">
+          <img src="assets/images/lake.jpg">
+          <section class="info">
+            <h2>Lake</h2>
+            <p>This picture is a reflection of God's beauty...</p>
+          </section><!--End of info -->
+        </div><!--End of items -->
+        <div class="items">
+          <img src="assets/images/grass.jpg">
+          <section class="info">
+            <h2>Grass</h2>
+            <p>This picture is a reflection of God's beauty... </p>
+          </section><!--End of info -->
+        </div><!--End of items -->
+        <div class="items">
+          <img src="assets/images/mountain.jpg">
+          <section class="info">
+            <h2>Mountain</h2>
+            <p>This picture is a reflection of God's beauty... </p>
+          </section><!--End of info -->
+        </div><!--End of items -->
+        <div class="items">
+          <img src="assets/images/nature_path.jpg">
+          <section class="info">
+            <h2>Nature Path</h2>
+            <p>This picture is a reflection of God's beauty.... </p>
+          </section><!--End of info -->
+        </div><!--End of items -->
+      </div><!--End of slider -->
+    </div><!--End of Hero -->
+  </body>
 </html>

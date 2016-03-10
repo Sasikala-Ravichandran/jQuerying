@@ -1,19 +1,22 @@
-#board{
+#board {
   width:306px;
   height: 306px;
   border: 1px solid black;
 }
-.tile{
+
+.tile {
   width: 100px;
   height: 100px;
   border:1px solid black;
   float: left;
 }
-.circle_bg{
+
+.circle_bg {
   background: url("o.jpg") no-repeat center;
   background-size: 15px;
 }
-.ex_bg{
+
+.ex_bg {
   background: url("x.png") no-repeat center;
   background-size: 15px;
 } 
